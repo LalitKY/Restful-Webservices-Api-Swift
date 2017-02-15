@@ -1,4 +1,7 @@
 # Restful-Webservices-Api-Swift
-You can simply use a class to call web service easily.
-Customise method parameters and get the data uploaded to server
-Swift 3 comptible.
+Restful Api call in Swift.
+
+1. Customise method name and get the data uploaded to server
+2. Swift 3 comptiblity.
+3. Customise method parameters.
+4. Class can be used in Objective C compatible projects.
