@@ -12,8 +12,8 @@
 		7DE6290D1E54401B003C2483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE6290B1E54401B003C2483 /* Main.storyboard */; };
 		7DE6290F1E54401B003C2483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DE6290E1E54401B003C2483 /* Assets.xcassets */; };
 		7DE629121E54401B003C2483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE629101E54401B003C2483 /* LaunchScreen.storyboard */; };
-		7DE6291C1E54411E003C2483 /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6291B1E54411E003C2483 /* ApiCall.swift */; };
 		7DE6291F1E544176003C2483 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6291E1E544176003C2483 /* Utils.swift */; };
+		7DE629271E5477F6003C2483 /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE629261E5477F6003C2483 /* ApiCall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		7DE6290E1E54401B003C2483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DE629111E54401B003C2483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DE629131E54401B003C2483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DE6291B1E54411E003C2483 /* ApiCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
 		7DE6291E1E544176003C2483 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7DE629261E5477F6003C2483 /* ApiCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,20 +62,12 @@
 				7DE6291D1E544167003C2483 /* Util */,
 				7DE629091E54401B003C2483 /* ViewController.swift */,
 				7DE6290B1E54401B003C2483 /* Main.storyboard */,
-				7DE6291A1E5440E0003C2483 /* Network Comm. */,
+				7DE629251E5477F6003C2483 /* Network Comm. */,
 				7DE6290E1E54401B003C2483 /* Assets.xcassets */,
 				7DE629101E54401B003C2483 /* LaunchScreen.storyboard */,
 				7DE629131E54401B003C2483 /* Info.plist */,
 			);
 			path = RestfulApiCalling;
-			sourceTree = "<group>";
-		};
-		7DE6291A1E5440E0003C2483 /* Network Comm. */ = {
-			isa = PBXGroup;
-			children = (
-				7DE6291B1E54411E003C2483 /* ApiCall.swift */,
-			);
-			path = "Network Comm.";
 			sourceTree = "<group>";
 		};
 		7DE6291D1E544167003C2483 /* Util */ = {
@@ -84,6 +76,14 @@
 				7DE6291E1E544176003C2483 /* Utils.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		7DE629251E5477F6003C2483 /* Network Comm. */ = {
+			isa = PBXGroup;
+			children = (
+				7DE629261E5477F6003C2483 /* ApiCall.swift */,
+			);
+			path = "Network Comm.";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +159,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DE6290A1E54401B003C2483 /* ViewController.swift in Sources */,
-				7DE6291C1E54411E003C2483 /* ApiCall.swift in Sources */,
 				7DE629081E54401B003C2483 /* AppDelegate.swift in Sources */,
+				7DE629271E5477F6003C2483 /* ApiCall.swift in Sources */,
 				7DE6291F1E544176003C2483 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

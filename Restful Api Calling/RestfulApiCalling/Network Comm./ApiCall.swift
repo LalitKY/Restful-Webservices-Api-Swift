@@ -13,7 +13,7 @@ class ApiCall: NSObject {
     // MARK: Call any service method
     
      /** You can cerate your own methods to call from any other class. You can change parameters as well. **/
-    func methodTocallservice(info: String ,completion: @escaping (_ result: [String:AnyObject]) -> Void) {
+    @objc func methodTocallservice(info: String ,completion: @escaping (_ result: [String:AnyObject]) -> Void) {
         
         let urlString = String.init(format: "%@", WEB_URL_STRING)
         var data = Data()
@@ -63,7 +63,7 @@ class ApiCall: NSObject {
     
     // MARK: Call all web service method
     
-    func callService ( urlString : String, httpMethod: String , data: Data , completion: @escaping (_ result: [String:AnyObject]) -> Void)
+    @objc func callService ( urlString : String, httpMethod: String , data: Data , completion: @escaping (_ result: [String:AnyObject]) -> Void)
     {
         
         let request = NSMutableURLRequest(url: NSURL(string: urlString)! as URL)
@@ -104,7 +104,7 @@ class ApiCall: NSObject {
      * Below here are all methods the classes use to communicate with webservice
      */
     
-    func convertStringToDictionary(text: String) -> NSDictionary? {
+    @objc func convertStringToDictionary(text: String) -> NSDictionary? {
         if let data = text.data(using: String.Encoding.utf8) {
             do {
                 return try JSONSerialization.jsonObject(with: data, options: []) as? NSDictionary as! [String : AnyObject]? as NSDictionary?
